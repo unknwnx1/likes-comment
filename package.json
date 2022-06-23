@@ -1,0 +1,20 @@
+{
+  "name": "likes-comments",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.27.2",
+    "chalk": "^4.1.2",
+    "dotenv": "^16.0.1",
+    "instagram_mqtt": "^1.2.2",
+    "instagram-private-api": "^1.45.3",
+    "moment": "^2.29.3"
+  }
+}
