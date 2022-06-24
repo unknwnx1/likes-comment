@@ -79,11 +79,10 @@ async function task() {
                             `[ ${moment().format("HH:mm:ss")} ] Berhasil komentar`, textKomentar
                         )
                     );
-                    console.log(chalk.blue(`[ ${moment().format("HH:mm:ss")} ] input to server id comment : ${komentar.pk}`));
-                    console.log(chalk.yellow(`[ ${moment().format("HH:mm:ss")} ] waiting for proccess likes in comment ...`));
-
+                    console.log(chalk.blue(`[ ${moment().format("HH:mm:ss")} ] trying input to server id comment : ${komentar.pk}`));
                     const input = await api.push(username, komentar.pk, apikey)
                     if (input.status == 'ok') {
+                        console.log(chalk.yellow(`[ ${moment().format("HH:mm:ss")} ] waiting for proccess likes in comment ...`));
                         console.log(chalk.blue(`[ ${moment().format("HH:mm:ss")} ] Sisa credit anda : ${input.data.credit} | sisa masa aktif : ${input.data.expired} Hari`));
 
                     } else {
